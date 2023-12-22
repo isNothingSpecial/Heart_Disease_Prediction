@@ -11,8 +11,8 @@ st.write('Prediksi Data Baru')
 lit = ['Cp', 'Trestbps', 'Chol', 'Fbs','Restecg','Thalach','Exang','Oldpeak']
 
 literatur = st.selectbox('Pilih Literatur yang ingin anda ketahui', lit)
-        
-        if literatur == 'Cp':
+
+if literatur == 'Cp':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
