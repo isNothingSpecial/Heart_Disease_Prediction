@@ -14,9 +14,17 @@ literatur = st.selectbox('Pilih Literatur yang ingin anda ketahui', lit)
 
 if literatur == 'Cp':
                 st.header('Chest Pain')
-                st.subheader('Prediction : ')
+                st.subheader('Chest Pain atau Nyeri Dada')
                 st.write('Terindikasi Tidak sedang sakit jantung')
-
+                litcp = ['Chest Pain Type 0', 'Chest Pain Type 1', 'Chest Pain Type 2', 'Chest Pain Type 3']
+                literaturcp = st.selectbox('Pilih literatur Chest Pain yang ingin anda ketahui', litcp)
+    if literaturcp == 'Chest Pain Type 0':
+                st.header('Chest Pain Type 0')
+                st.subheader('Chest Pain Type 0atau Nyeri Dada Type Asimtomatik')
+                st.write('Nyeri dada asimtomatik adalah nyeri dada yang tidak memiliki tanda atau gejala yang jelas, atau memiliki gejala yang tidak khas dari masalah jantung. Hal ini dapat disebabkan oleh berbagai kondisi, seperti iskemia miokard, serangan jantung diam, emboli paru, gagal jantung, atau gangguan kardiovaskular, muskuloskeletal, gastrointestinal, paru, atau kejiwaan lainnya. Nyeri dada tanpa gejala bisa sulit didiagnosis dan mungkin memerlukan tes lebih lanjut untuk menyingkirkan kondisi serius.')
+    else :
+                st.write('pilih Tipikal Chest Pain di atas')
+      
 elif literatur == 'Trestbps':
                 st.header('Rest Blood Pressure')
                 st.subheader('Rest Blood Pressure atau Tekanan Darah')
