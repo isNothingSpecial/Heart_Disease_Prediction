@@ -13,14 +13,14 @@ lit = ['Cp', 'Trestbps', 'Chol', 'Fbs','Restecg','Thalach','Exang','Oldpeak']
 literatur = st.selectbox('Pilih Literatur yang ingin anda ketahui', lit)
 
 if literatur == 'Cp':
-                st.header('')
+                st.header('Chest Pain')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
 elif literatur == 'Trestbps':
-                st.header('')
-                st.subheader('Prediction : ')
-                st.write('Terindikasi Tidak sedang sakit jantung')
+                st.header('Rest Blood Pressure')
+                st.subheader('Rest Blood Pressure atau Tekanan Darah')
+                st.write('Tekanan Darah dalam penyakit jantung sangat mempengaruhi,karena semakin tinggi tekanan darah dalam tubuh semakin tinggi,maka akan menyebabkan Hipertensi.Hipertensi atau tekanan darah tinggi adalah peningkatan tekanan darah sistolik lebih dari 140 mmHg dan tekanan darah diastolik lebih dari 90 mmHg pada dua kali pengukuran dengan selang waktu lima menit dalam keadaan cukup istirahat/ tenang')
 
 elif literatur == 'Chol':
                 st.header('')
