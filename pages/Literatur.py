@@ -17,41 +17,41 @@ if literatur == 'Cp':
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
-        elif literatur == 'Trestbps':
+elif literatur == 'Trestbps':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
-        elif literatur == 'Chol':
+elif literatur == 'Chol':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
-        elif algorithm == 'Fbs':
+elif algorithm == 'Fbs':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
-        elif algorithm == 'Restecg':
+elif algorithm == 'Restecg':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
-        elif literatur == 'Thalach':
+elif literatur == 'Thalach':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
-        elif algorithm == 'Exang':
+elif algorithm == 'Exang':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
 
-        elif algorithm == 'Oldpeak':
+elif algorithm == 'Oldpeak':
                 st.header('')
                 st.subheader('Prediction : ')
                 st.write('Terindikasi Tidak sedang sakit jantung')
-        # Continue the same indentation pattern for the other algorithms...
+# Continue the same indentation pattern for the other algorithms...
 
 else:
         st.subheader('Prediction : ')
