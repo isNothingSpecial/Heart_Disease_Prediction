@@ -15,6 +15,14 @@ literatur = st.selectbox('Pilih Literatur yang ingin anda ketahui', lit)
 if literatur == 'Cp':
     st.header('Chest Pain')
     st.subheader('Chest Pain atau Nyeri Dada')
+    st.markdown('''Nyeri Dada dibagi menjadi 4 berdasarkan jenisnya,yakni :
+- Chest Pain type 1 atau Asimtomatic Chest Pain
+- Chest Pain type 2 atau Atipical Anginal Chest Pain
+- Chest Pain type 3 atau Non Anginal Chest Pain
+- Chest Pain type 4 atau Typical Anginal Chest Pain
+
+Berikut adalah literasi singkat tentang jenis jenis Chest Pain diatas''')
+    
     litcp = ['Chest Pain Type 1', 'Chest Pain Type 2', 'Chest Pain Type 3', 'Chest Pain Type 4']
     literaturcp = st.selectbox('Pilih literatur Chest Pain yang ingin anda ketahui : ', litcp)
     
