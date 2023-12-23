@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.sidebar.write('Bagus Rahma Aulia Chandra - A11.2017.10295')
+
 df = pd.read_csv('afterdrop.csv')
 
 st.title('''LITERATUR ISTILAH-ISTILAH DALAM DATA DETEKSI PENYAKIT JANTUNG DI HUNGARIA''')
