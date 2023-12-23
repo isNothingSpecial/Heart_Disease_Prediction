@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('afterdrop.csv')
 
 st.title('''DETEKSI PENYAKIT JANTUNG DI HUNGARIA''')
-st.write('Prediksi Data Baru')
+st.write('literatur singkat terkait istilah-istilah yang dipakai dalam data ini')
 
 lit = ['Cp', 'Trestbps', 'Chol', 'Fbs', 'Restecg', 'Thalach', 'Exang', 'Oldpeak']
 
@@ -46,17 +46,17 @@ elif literatur == 'Trestbps':
 
 elif literatur == 'Chol':
     st.header('Cholesterol')
-    st.subheader('Chol atau Kolesterol')
+    st.subheader('Chol atau Kolesterol,adalah Kadar Kolesterol yang terkandung dalam tubuh,dimana kadar kolesterol makin tinggi,semakin tinggi pula risiko penyakit jantung')
     # Add your content for cholesterol...
 
 elif literatur == 'Fbs':
     st.header('Fasting Blood Sugar')
-    st.subheader('Fbs atau Gula Darah Puasa')
+    st.subheader('Fbs atau Gula Darah')
     # Add your content for fasting blood sugar...
 
 elif literatur == 'Restecg':
     st.header('Resting Electrocardiographic Results')
-    st.subheader('Restecg atau Hasil Elektrokardiografi Istirahat')
+    st.subheader('Restecg atau Hasil Elektrokardiografi')
     # Add your content for resting electrocardiographic results...
 
 elif literatur == 'Thalach':
@@ -66,12 +66,12 @@ elif literatur == 'Thalach':
 
 elif literatur == 'Exang':
     st.header('Exercise Induced Angina')
-    st.subheader('Exang atau Angina yang Dipicu Olahraga')
+    st.subheader('Exang atau Angina yang Dipicu oleh Ecercise atau pengujian')
     # Add your content for exercise induced angina...
 
 elif literatur == 'Oldpeak':
     st.header('ST Depression Induced by Exercise')
-    st.subheader('Oldpeak atau Depresi ST yang Dipicu oleh Olahraga')
+    st.subheader('Oldpeak atau Depresi ST yang Dipicu oleh hasil dari Exercise')
     # Add your content for ST depression induced by exercise...
 
 else:
