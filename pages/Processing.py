@@ -7,6 +7,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.naive_bayes import GaussianNB,BernoulliNB, MultinomialNB, ComplementNB
 from sklearn import svm
 
+st.sidebar.write('Bagus Rahma Aulia Chandra - A11.2017.10295')
+
 df = pd.read_csv('afterdrop.csv')
 
 st.title(''' DETEKSI PENYAKIT JANTUNG DI HUNGARIA ''')
