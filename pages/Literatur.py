@@ -3,7 +3,7 @@ import pandas as pd
 
 df = pd.read_csv('afterdrop.csv')
 
-st.title(''' DETEKSI PENYAKIT JANTUNG DI HUNGARIA ''')
+st.title('''DETEKSI PENYAKIT JANTUNG DI HUNGARIA''')
 st.write('Prediksi Data Baru')
 
 lit = ['Cp', 'Trestbps', 'Chol', 'Fbs', 'Restecg', 'Thalach', 'Exang', 'Oldpeak']
@@ -13,13 +13,29 @@ literatur = st.selectbox('Pilih Literatur yang ingin anda ketahui', lit)
 if literatur == 'Cp':
     st.header('Chest Pain')
     st.subheader('Chest Pain atau Nyeri Dada')
-    st.write('Terindikasi Tidak sedang sakit jantung')
-    litcp = ['Chest Pain Type 0', 'Chest Pain Type 1', 'Chest Pain Type 2', 'Chest Pain Type 3']
+    litcp = ['Chest Pain Type 1', 'Chest Pain Type 2', 'Chest Pain Type 3', 'Chest Pain Type 4']
     literaturcp = st.selectbox('Pilih literatur Chest Pain yang ingin anda ketahui', litcp)
-    if literaturcp == 'Chest Pain Type 0':
-        st.header('Chest Pain Type 0')
-        st.subheader('Chest Pain Type 0 atau Nyeri Dada Type Asimtomatik')
+    
+    if literaturcp == 'Chest Pain Type 1':
+        st.header('Chest Pain Type 1')
+        st.subheader('Chest Pain Type 1 atau Nyeri Dada Type Asimtomatik')
         st.write('Nyeri dada asimtomatik adalah nyeri dada yang tidak memiliki tanda atau gejala yang jelas, atau memiliki gejala yang tidak khas dari masalah jantung. Hal ini dapat disebabkan oleh berbagai kondisi, seperti iskemia miokard, serangan jantung diam, emboli paru, gagal jantung, atau gangguan kardiovaskular, muskuloskeletal, gastrointestinal, paru, atau kejiwaan lainnya. Nyeri dada tanpa gejala bisa sulit didiagnosis dan mungkin memerlukan tes lebih lanjut untuk menyingkirkan kondisi serius.')
+    
+    elif literaturcp == 'Chest Pain Type 2':
+        st.header('Chest Pain Type 2')
+        st.subheader('Chest Pain Type 2 atau Nyeri Dada Tipe Atipikal Angina')
+        st.write('Angina atipikal mengacu pada nyeri dada atau ketidaknyamanan yang tidak memiliki karakteristik khas angina klasik. Ini mungkin hadir dengan gejala yang berbeda atau mungkin tidak mengikuti pola nyeri dada yang biasa terkait dengan masalah jantung.')
+        
+    elif literaturcp == 'Chest Pain Type 3':
+        st.header('Chest Pain Type 3')
+        st.subheader('Chest Pain Type 3 atau Nyeri Dada Tipe non tipikal Angina')
+        st.write('Angina non-tipikal mengacu pada nyeri dada yang tidak berasal dari jantung dan kadang-kadang tidak mewakili gejala iskemik angina pada kasus penyakit jantung yang khas.')
+    
+    elif literaturcp == 'Chest Pain Type 4':
+        st.header('Chest Pain Type 4')
+        st.subheader('Chest Pain Type 4 atau Nyeri Dada Tipe tipikal Angina')
+        st.write('Angina khas, juga dikenal sebagai angina stabil, adalah nyeri dada atau ketidaknyamanan yang terjadi ketika otot jantung tidak menerima aliran darah yang cukup, biasanya selama aktivitas fisik atau stres. Ini ditandai dengan pola yang dapat diprediksi, sering dipicu oleh kegiatan seperti olahraga atau stres emosional, dan cenderung mereda dengan istirahat atau obat-obatan.')
+  
     else:
         st.write('pilih Tipikal Chest Pain di atas')
 
@@ -59,4 +75,7 @@ elif literatur == 'Oldpeak':
     # Add your content for ST depression induced by exercise...
 
 else:
-    st.subheader('Pilih literatur yang ingim anda ketahui ')
+    st.subheader('Pilih literatur yang ingin anda ketahui ')
+
+
+# The rest of your code remains unchanged for other conditions...
