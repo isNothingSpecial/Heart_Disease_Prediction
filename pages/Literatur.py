@@ -14,7 +14,7 @@ if literatur == 'Cp':
     st.header('Chest Pain')
     st.subheader('Chest Pain atau Nyeri Dada')
     litcp = ['Chest Pain Type 1', 'Chest Pain Type 2', 'Chest Pain Type 3', 'Chest Pain Type 4']
-    literaturcp = st.selectbox('Pilih literatur Chest Pain yang ingin anda ketahui', litcp)
+    literaturcp = st.selectbox('Pilih literatur Chest Pain yang ingin anda ketahui : ', litcp)
     
     if literaturcp == 'Chest Pain Type 1':
         st.header('Chest Pain Type 1')
