@@ -51,7 +51,7 @@ elif literatur == 'Chol':
 
 elif literatur == 'Fbs':
     st.header('Fasting Blood Sugar')
-    st.subheader('Fbs atau Gula Darah')
+    st.subheader('Fbs atau Gula Darah apabila Gula Darah lebih dari 120 mg/dl maka bisa dikategorikan gula darah dalam tubuh tergolong tinggi,dan semakin tinggi gula darah dalam tubuh,maka risiko terkena penyakit jantung makin besar')
     # Add your content for fasting blood sugar...
 
 elif literatur == 'Restecg':
