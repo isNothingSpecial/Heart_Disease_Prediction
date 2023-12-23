@@ -13,13 +13,12 @@ df_proc = pd.read_csv('afterdrop.csv')
 
 st.set_page_config(page_title="Homepage",layout="wide")
 #side bar
-st.sidebar.header("PENGOLAHAN DATA SAKIT JANTUNG DI HUNGARIA DENGAN MENGGUNAKAN ALGORITMA NAIVE BAYES DAN SVM")
+st.sidebar.write('Bagus Rahma Aulia Chandra - A11.2017.10295')
 #st.sidebar.image("1835901.jpg")
 
 ##layout
 
-st.title(''' PENGOLAHAN DATA DETEKSI PENYAKIT JANTUNG DI HUNGARIA DENGAN ALGORITMA KNN ''')
-st.write('Bagus Rahma Aulia Chandra - A11.2017.10295')
+st.title(''' PENGOLAHAN DATA SAKIT JANTUNG DI HUNGARIA DENGAN MENGGUNAKAN ALGORITMA NAIVE BAYES DAN SVM ''')
 st.markdown('''   Dataset yang akan dianalisa adalah data pasien yang terindikasi penyakit jantung dan yang tidak terindikasi sakit jantung,ditinjau melalui,data-data seperti :
 - CP (Constrictive Pericarditis)
 - Trestbps (The Resting Blood Pressure)
