@@ -3,7 +3,7 @@ import pandas as pd
 
 df = pd.read_csv('afterdrop.csv')
 
-st.title('''DETEKSI PENYAKIT JANTUNG DI HUNGARIA''')
+st.title('''LITERATUR ISTILAH-ISTILAH DALAM DATA DETEKSI PENYAKIT JANTUNG DI HUNGARIA''')
 st.write('literatur singkat terkait istilah-istilah yang dipakai dalam data ini')
 
 lit = ['Cp', 'Trestbps', 'Chol', 'Fbs', 'Restecg', 'Thalach', 'Exang', 'Oldpeak']
