@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-from sklearn.neighbors import KNeighborsClassifier
 
 ## data
 
@@ -14,7 +13,7 @@ df_proc = pd.read_csv('afterdrop.csv')
 
 st.set_page_config(page_title="Homepage",layout="wide")
 #side bar
-st.sidebar.header("PENGOLAHAN DATA SAKIT JANTUNG DI HUNGARIA DENGAN ALGORITMA KNN")
+st.sidebar.header("PENGOLAHAN DATA SAKIT JANTUNG DI HUNGARIA DENGAN MENGGUNAKAN ALGORITMA NAIVE BAYES DAN SVM")
 #st.sidebar.image("1835901.jpg")
 
 ##layout
@@ -39,7 +38,7 @@ st.markdown(''' Setelah dilakukan proses data cleaning dan data processing antar
             - Menghapus kolom yang tidak diperlukan
             - Mengidentifikasi Target Class
             - Ditampilkan dalam bentuk diagram (Visualisasi Data
-            - Pemrosesan dengan menggunakan algoritma KNN
+            - Pemrosesan dengan menggunakan algoritma yang tersedia
         
 Berikut adalah contoh data yang sudah di Grouping berdasar Kolom Dates dibuang ''')
 
